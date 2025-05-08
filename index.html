@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Tim RG</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f9;
+      color: #333;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 15px;
+      max-width: 350px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+    header p {
+      font-size: 1rem;
+      color: #3498db;
+      font-weight: 600;
+    }
+
+    main {
+      width: 100%;
+      flex: 1;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #34495e;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 6px;
+      letter-spacing: 1px;
+    }
+
+    /* About Text */
+    #about p {
+      font-size: 1rem;
+      color: #555;
+      text-align: center;
+    }
+
+    /* Team photos container */
+    #team-photos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 10px;
+      /* hide scrollbar visually but keep functionality */
+      scrollbar-width: none; /* Firefox */
+    }
+    #team-photos::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+
+    /* Team member photos */
+    .member-photo {
+      flex: 0 0 auto;
+      width: 80px;
+      height: 80px;
+      background: #3498db;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      color: white;
+      font-weight: 700;
+      user-select: none;
+      text-transform: uppercase;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      cursor: default;
+      transition: box-shadow 0.3s ease;
+    }
+    .member-photo:hover {
+      box-shadow: 0 6px 18px rgba(52, 152, 219, 0.6);
+    }
+
+    /* Call to Action */
+    #contact {
+      text-align: center;
+    }
+    #contact p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #34495e;
+    }
+    #contact .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    #contact a.button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.6);
+      transition: background-color 0.3s ease;
+      user-select: none;
+      text-decoration: none;
+      display: inline-block;
+      min-width: 120px;
+      text-align: center;
+    }
+    #contact a.button:hover {
+      background-color: #2980b9;
+    }
+
+    /* Responsive adjustments */
+    @media (min-width: 360px) {
+      body {
+        max-width: 360px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tim RG</h1>
+  <h2>(Rdid Genk)</h2>
+  <p>Membangun Solidaritas Bersama</p>
+</header>
+
+<main>
+  <section id="about">
+    <h2>Tentang Kami</h2>
+    <p>Kami adalah tim yang termotivasi, berkomitmen pada keunggulan, kolaborasi, dan inovasi. Talenta kami yang digabungkan memungkinkan kami mencapai hasil luar biasa dan memberikan nilai yang istimewa.</p>
+  </section>
+
+  <section id="team">
+    <h2>Petinggi Tim</h2>
+    <div id="team-photos" aria-label="Foto anggota tim">
+      <div class="member-photo" aria-label="AVA">AVA</div>
+
+      <div class="member-photo" aria-label="LIQA">LIQA</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p>Tertarik bergabung atau berkolaborasi dengan kami?</p>
+    <div class="button-container">
+      <a class="button" href="https://wa.me/+6283199573042">Hubungi Admin 1</a>
+      <a class="button" href="https://wa.me/+6295419556140">Hubungi Admin 2</a>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
